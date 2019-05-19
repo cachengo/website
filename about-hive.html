@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-	<title>Cachengo-- Collective Portal</title>
+	<title>Cachengo-- Hive Messenger</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
@@ -77,13 +77,11 @@
 		<!-- /Nav -->
 
 		<!-- header wrapper -->
-		<!--
-		<div class="header-wrapper sm-padding bg-white">
+		<!--<div class="header-wrapper sm-padding bg-white">
 			<div class="container">
-			  <h2>Drag &amp; Drop Configurability</h2>
+				<h2>Secure Routes</h2>
 			</div>
-		</div>
-		-->
+		</div>-->
 		<!-- /header wrapper -->
 
 	</header>
@@ -102,25 +100,43 @@
 				<main id="main" class="col-md-9">
 					<div class="blog">
 						<div class="blog-img">
-							<img class="img-responsive" src="./img/draganddrop.png" alt="draganddrop">
-							<figcaption><i>Figure 1: Applications can be quickly deployed via drag & drop</i></figcaption>
+							<img class="img-responsive" src="./img/bess.jpg" alt="freedom">
 						</div>
 						<div class="blog-content">
-						  <h3>Drag & Drop Configurability</h3>
-							<p class="tab">Symbiote Drives can be quickly and easily configured via drag & drop through our Collective portal.Simply select an application or service from the catalog and drag its icon onto the node(s) you wish to provision. There is no need to ssh onto any of the nodes and also no need to learn how to code. Provisioning takes just seconds to perform.</p>
-							<figure>
-						    	<img src="img/minios3select.png" width="80%" alt="minios3select"/> 
-								<figcaption><i>Figure 2: Example S3 Select deployment via Minio</i></figcaption>
+						  <h3>Hive Messenger&ndash; A different type of SD-WAN</h3>
+						  	<p class="tab">Most SD-WAN technologies simply focus on connecting or extending networks, which is normally fine. At Cachengo, we needed to do more than that. We needed to provide a way to connect to potentially millions of Symbiotes, which are almost exclusively deployed behind secure firewalls and can be configured as object storage devices (OSDs) or even as application servers.And we wanted to handle all of our communications without a dependency upon secure shell (SSH). So, we created Hive. Hive is a messenger, a protocol, a bit hard to describe. It allows us to seemlessly connect to our devices, no matter where they sit. And we can use it, in combination with Collective, to quickly deploy applications. Anything we can do via SSH can be done via Hive, but in a fully trackable, secure, and auditable fashion.</p>
+							
+						  <h3>The shortest distance between two points is still a straight line</h3>
+							
+							<p class="tab">The worst thing you can do for your Edge computing latency is to connect everything up to a proxy. We 
+							efficiently, and securely connect all of our managed devices, regardless of whether they sit behind different firewalls. 
+							Proxies are inherently bad for scaling for numerous reasons&mdash; the biggest is that they ultimately create bottlenecks.
+							Imagine wanting to go from point A to point B, but having to go through point Z to do so, only to find that there is major
+							construction going on at point Z. Why do it if you don't have to? Connecting devices up via VPN tunnels is equivalent to
+							throwing a proxy in the middle of all of your traffic. You can do it, but you don't have to.</p>
+							
+							<p class="tab">In addition to the bottleneck potential, proxies are inherently bad because they also provide a risk for man
+							in the middle attacks.</p> 
+							<figure><img src="img/man-in-the-middle-attack.png" width="80%" alt=""/> 
+								<figcaption><i>Figure: Example of a proxy server MITM exploit</i></figcaption>
 							</figure>
 							<br>
-							<p class="tab">Symbiotes can be configured to be a part of a cluster of like nodes; or they can be mixed and matched with different personalities&#8211; just depends on your needs. If your needs ever change, you can simply delete the service and deploy a new one. In some cases, deployments, which have taken hundreds of hours to provision, now take just seconds with Collective.</p>
-							<br>
-							<figure>
-						    	<iframe width="560" height="315" src="https://www.youtube.com/embed/Yc_uVJWjkyY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-								<figcaption><i>Figure 3: Watch Minio installation via Collective</i></figcaption>
-							</figure>
-							<p class="tab">If you wish to follow along with other videos on our Youtube channel, you can do so <a href="https://www.youtube.com/channel/UC6_oLC1oI4UJcl3cxyeayIg?" target="_blank">here</a>.</p>
-						</div>
+							<p>With a man in the middle attack on a proxy, any vulnerability can be exploited to create an opportunity for data to be
+							hijacked, manipulated, or otherwise compromised. Furthermore, any connected devices or services can also be attacked through
+							these types of exploits. </p>
+							
+							<p class="tab">Besides the proxy concerns, there is also a concern for exposing endpoints to the public. Ever hear of DoS 
+							or DDoS? DoS stands for denial of service. When you expose a service on the internet, it 
+							becomes vulnerable to attacks. This is because the service must broadcast itself to whatever is trying find it and utilize
+							it. People looking to be malicious can discover these exposed endpoints and disrupt such services by overloading them with 
+							requests, until the underlying resources crash. With our Secure Routes, we can connect up many endpoints without the use of 
+							VPN tunnels and without exposing resource endpoints. Imagine being in a building with many offices. Now, remove all doors, 
+							windows, and even hallways, but you want to go from one office to another. While such a scenario might wreak havoc to someone
+							suffering from claustrophobia, it is actually ideal when it comes to network security. And this is how we connect devices 
+							efficiently and securely. Of course, you are free to continue to utilize your VPNs if you'd like.</p>
+							
+							
+					  </div>
 
 						<!-- blog tags -->						
 						<!-- blog tags -->
